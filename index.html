@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic Quote Generator</title>
+  <title>Quotes App</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #quote { font-size: 1.5em; margin: 20px 0; }
+  </style>
 </head>
 <body>
-  <h1>Dynamic Quote Generator</h1>
+  <h1>Random Quote Generator</h1>
   
-  <div id="quoteDisplay"></div>
-  <button id="newQuote">Show New Quote</button>
+  <div id="quote"></div>
+  <button id="showNewQuote">Show New Quote</button>
   
-  <div id="addQuoteFormContainer">
-    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
-    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
-    <button id="addQuoteButton">Add Quote</button>
-  </div>
+  <h2>Add a New Quote</h2>
+  <input type="text" id="newQuoteText" placeholder="Quote text">
+  <input type="text" id="newQuoteCategory" placeholder="Category">
+  <button id="addQuoteButton">Add Quote</button>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
